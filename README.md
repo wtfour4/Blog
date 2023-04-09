@@ -22,7 +22,7 @@
 1. UI重设计
 2. 支持多用户登录
 3. 嵌入[ms搜索引擎](https://github.com/meilisearch/meilisearch)
-4. 嵌入[charbot机器人](https://github.com/wtfour4/chat-bot)
+4. 嵌入[chatbot机器人](https://github.com/wtfour4/chat-bot)
 
 
 ## 简介
