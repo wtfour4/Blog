@@ -24,8 +24,6 @@
 3. 嵌入[ms搜索引擎](https://github.com/meilisearch/meilisearch)
 4. 嵌入[charbot机器人](https://github.com/wtfour4/chat-bot)
 
-————————————————————————————————————————————————————————————
-
 
 ## 简介
 
