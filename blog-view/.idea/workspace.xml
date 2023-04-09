@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c26aeef-a184-45c0-8e3a-c77519a5fc1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../blog-cms/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-cms/.idea/blog-cms.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-cms/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../blog-cms/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-api/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-api/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-cms/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-cms/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-cms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-cms/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-api/log/blog-dev/spring.log-2023-04-09-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-api/log/blog-dev/spring.log-2023-04-09-0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +37,8 @@
       <option name="presentableId" value="Default" />
       <updated>1681009644632</updated>
       <workItem from="1681009645822" duration="797000" />
+      <workItem from="1681019451860" duration="3104000" />
+      <workItem from="1681037283407" duration="1544000" />
     </task>
     <servers />
   </component>

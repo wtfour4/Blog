@@ -11,9 +11,18 @@
     <img src="https://img.shields.io/badge/Redis-3.2.100-brightgreen">
 	<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Frawchen%2FBlog&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false">
 </p>
+## 感谢rawchen老哥的技术分享！
 
+希望以后有机会加入友链~
 
+## TODO
 
+1. UI重设计
+2. 支持多用户登录
+3. 嵌入[ms搜索引擎](https://github.com/meilisearch/meilisearch)
+4. 嵌入[charbot机器人](https://github.com/wtfour4/chat-bot)
+
+————————————————————————————————————————————————————————————
 
 
 ## 简介
