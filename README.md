@@ -19,10 +19,32 @@
 
 ## TODO
 
-1. UI重设计
-2. 支持多用户登录
-3. 嵌入[ms搜索引擎](https://github.com/meilisearch/meilisearch)
-4. 嵌入[chatbot机器人](https://github.com/wtfour4/chat-bot)
+1. Website重设计
+   - 导航栏添加“拓展台”模块
+     - 部署github上好玩的项目，并提供跳转服务
+   - 导航栏背景颜色修改为白色，字体颜色修改为黑色
+   - 自我介绍
+2. 嵌入[ms搜索引擎](https://github.com/meilisearch/meilisearch)
+   - 支持文章内容的快速检索
+   - 部署至“拓展台”
+
+3. 嵌入[chatbot机器人](https://github.com/wtfour4/chat-bot)
+   - 部署至“拓展台”
+
+4. 嵌入agentGpt
+   - 部署至“拓展台”
+
+
+## 其他Tip
+
+```shell
+# 版本
+node -v
+v14.17.6
+npm -v
+6.14.15
+```
+
 
 
 ## 简介

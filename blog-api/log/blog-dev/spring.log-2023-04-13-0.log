@@ -1,0 +1,698 @@
+2023-04-13 20:28:19.992  INFO 4308 --- [restartedMain] com.rawchen.BlogApiApplication           : Starting BlogApiApplication on LAPTOP-PDNSIA70 with PID 4308 (D:\github\Blog\blog-api\target\classes started by Lenovo in D:\github\Blog\blog-api)
+2023-04-13 20:28:19.992 DEBUG 4308 --- [restartedMain] com.rawchen.BlogApiApplication           : Running with Spring Boot v2.2.7.RELEASE, Spring v5.2.6.RELEASE
+2023-04-13 20:28:19.992  INFO 4308 --- [restartedMain] com.rawchen.BlogApiApplication           : The following profiles are active: dev
+2023-04-13 20:28:20.039  INFO 4308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-13 20:28:20.039  INFO 4308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-13 20:28:20.556  INFO 4308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-13 20:28:20.556  INFO 4308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-13 20:28:20.587  INFO 4308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2023-04-13 20:28:21.258  INFO 4308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-04-13 20:28:21.258  INFO 4308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-13 20:28:21.258  INFO 4308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.34]
+2023-04-13 20:28:21.258  INFO 4308 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-04-13 20:28:21.258  INFO 4308 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-04-13 20:28:21.258  INFO 4308 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-04-13 20:28:21.275  INFO 4308 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-04-13 20:28:21.386  INFO 4308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-13 20:28:21.386  INFO 4308 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1347 ms
+2023-04-13 20:28:22.054  INFO 4308 --- [restartedMain] n.b.p.u.AbstractUserAgentAnalyzerDirect  : - Loaded 90 files in  355 msec using expression: classpath*:UserAgents/**/*.yaml
+2023-04-13 20:28:22.054  INFO 4308 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : 
+2023-04-13 20:28:22.054  INFO 4308 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : /-----------------------------------------------------------\
+2023-04-13 20:28:22.054  INFO 4308 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | Yauaa 5.20 (v5.20 @ 2020-11-22T15:39:16Z)                 |
+2023-04-13 20:28:22.054  INFO 4308 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : +-----------------------------------------------------------+
+2023-04-13 20:28:22.054  INFO 4308 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | For more information: https://yauaa.basjes.nl             |
+2023-04-13 20:28:22.054  INFO 4308 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : | Copyright (C) 2013-2020 Niels Basjes - License Apache 2.0 |
+2023-04-13 20:28:22.054  INFO 4308 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : \-----------------------------------------------------------/
+2023-04-13 20:28:22.054  INFO 4308 --- [restartedMain] n.b.parse.useragent.utils.YauaaVersion   : 
+2023-04-13 20:28:22.054  INFO 4308 --- [restartedMain] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Building all needed matchers for the requested 11 fields.
+2023-04-13 20:28:22.423  INFO 4308 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2023-04-13 20:28:22.439  INFO 4308 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2023-04-13 20:28:23.169  INFO 4308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-13 20:28:23.260  INFO 4308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-13 20:28:23.270 DEBUG 4308 --- [restartedMain] c.r.mapper.BlogMapper.getBlogViewsList   : ==>  Preparing: select id, views from blog
+2023-04-13 20:28:23.287 DEBUG 4308 --- [restartedMain] c.r.mapper.BlogMapper.getBlogViewsList   : ==> Parameters: 
+2023-04-13 20:28:23.304 DEBUG 4308 --- [restartedMain] c.r.mapper.BlogMapper.getBlogViewsList   : <==      Total: 2
+2023-04-13 20:28:23.447  INFO 4308 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2023-04-13 20:28:23.447  INFO 4308 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-04-13 20:28:23.447  INFO 4308 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2023-04-13 20:28:23.447  INFO 4308 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2023-04-13 20:28:23.447  INFO 4308 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-04-13 20:28:23.447  INFO 4308 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-04-13 20:28:23.447  INFO 4308 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2023-04-13 20:28:23.447  INFO 4308 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@29e38e22
+2023-04-13 20:28:23.463 DEBUG 4308 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : ==>  Preparing: select job_id, bean_name, method_name, params, cron, status, remark, create_time from schedule_job
+2023-04-13 20:28:23.463 DEBUG 4308 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : ==> Parameters: 
+2023-04-13 20:28:23.473 DEBUG 4308 --- [restartedMain] c.r.mapper.ScheduleJobMapper.getJobList  : <==      Total: 2
+2023-04-13 20:28:23.606  INFO 4308 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-13 20:28:23.932  INFO 4308 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d681062, org.springframework.security.web.context.SecurityContextPersistenceFilter@58f644c3, org.springframework.security.web.header.HeaderWriterFilter@50a5a62f, org.springframework.web.filter.CorsFilter@4c591666, org.springframework.security.web.authentication.logout.LogoutFilter@7dae45e7, com.rawchen.config.JwtLoginFilter@78744820, com.rawchen.config.JwtFilter@51d1d6cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70816e1b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18a9a7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cf73794, org.springframework.security.web.session.SessionManagementFilter@64c7bb15, org.springframework.security.web.access.ExceptionTranslationFilter@7937c0a1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4eabdd66]
+2023-04-13 20:28:23.981  INFO 4308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-13 20:28:23.996  INFO 4308 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2023-04-13 20:28:23.996  INFO 4308 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-04-13 20:28:24.012  INFO 4308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-13 20:28:24.012  INFO 4308 --- [restartedMain] com.rawchen.BlogApiApplication           : Started BlogApiApplication in 4.315 seconds (JVM running for 5.354)
+2023-04-13 20:30:09.937  INFO 4308 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-13 20:30:09.937  INFO 4308 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-13 20:30:09.946  INFO 4308 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-04-13 20:30:09.986 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.S.getWebTitleSuffix                : ==>  Preparing: select value from site_setting where name_en = 'webTitleSuffix'
+2023-04-13 20:30:09.987 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.S.getWebTitleSuffix                : ==> Parameters: 
+2023-04-13 20:30:09.990 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.S.getWebTitleSuffix                : <==      Total: 1
+2023-04-13 20:30:11.395 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.SiteSettingMapper.getList     : ==>  Preparing: select * from site_setting
+2023-04-13 20:30:11.396 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.SiteSettingMapper.getList     : ==> Parameters: 
+2023-04-13 20:30:11.402 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.SiteSettingMapper.getList     : <==      Total: 27
+2023-04-13 20:30:11.425 DEBUG 4308 --- [http-nio-8090-exec-3] r.m.B.getBlogInfoListByIsPublished_COUNT : ==>  Preparing: SELECT count(0) FROM blog AS b LEFT JOIN category AS c ON b.category_id = c.id WHERE b.is_published = true
+2023-04-13 20:30:11.425 DEBUG 4308 --- [http-nio-8090-exec-3] r.m.B.getBlogInfoListByIsPublished_COUNT : ==> Parameters: 
+2023-04-13 20:30:11.429 DEBUG 4308 --- [http-nio-8090-exec-3] r.m.B.getBlogInfoListByIsPublished_COUNT : <==      Total: 1
+2023-04-13 20:30:11.431 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.B.getBlogInfoListByIsPublished     : ==>  Preparing: SELECT b.id, b.title, b.description, b.is_top, b.create_time, b.views, b.password, b.first_picture, c.category_name, c.id AS category_id FROM blog AS b LEFT JOIN category AS c ON b.category_id = c.id WHERE b.is_published = true order by is_top desc, create_time desc LIMIT ?
+2023-04-13 20:30:11.431 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.B.getBlogInfoListByIsPublished     : ==> Parameters: 5(Integer)
+2023-04-13 20:30:11.434 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.B.getBlogInfoListByIsPublished     : <==      Total: 2
+2023-04-13 20:30:11.440 DEBUG 4308 --- [http-nio-8090-exec-5] .r.m.B.getNewBlogListByIsPublished_COUNT : ==>  Preparing: SELECT count(0) FROM blog WHERE is_published = true
+2023-04-13 20:30:11.440 DEBUG 4308 --- [http-nio-8090-exec-5] .r.m.B.getNewBlogListByIsPublished_COUNT : ==> Parameters: 
+2023-04-13 20:30:11.441 DEBUG 4308 --- [http-nio-8090-exec-5] .r.m.B.getNewBlogListByIsPublished_COUNT : <==      Total: 1
+2023-04-13 20:30:11.442 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.B.getNewBlogListByIsPublished      : ==>  Preparing: select id, title, password from blog where is_published = true order by create_time desc LIMIT ?
+2023-04-13 20:30:11.442 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.B.getNewBlogListByIsPublished      : ==> Parameters: 3(Integer)
+2023-04-13 20:30:11.443 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.B.getNewBlogListByIsPublished      : <==      Total: 2
+2023-04-13 20:30:11.455 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.C.getCategoryNameList              : ==>  Preparing: select category_name from category order by id desc
+2023-04-13 20:30:11.455 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.C.getCategoryNameList              : ==> Parameters: 
+2023-04-13 20:30:11.457 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.C.getCategoryNameList              : <==      Total: 3
+2023-04-13 20:30:11.463 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.TagMapper.getTagListNotId     : ==>  Preparing: select tag_name, color from tag order by id desc
+2023-04-13 20:30:11.463 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.TagMapper.getTagListNotId     : ==> Parameters: 
+2023-04-13 20:30:11.465 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.TagMapper.getTagListNotId     : <==      Total: 2
+2023-04-13 20:30:11.468 DEBUG 4308 --- [http-nio-8090-exec-5] stByLimitNumAndIsPublishedAndIsRecommend : ==>  Preparing: select id, title, password, create_time, first_picture from blog where is_published = true and is_recommend = true order by rand() limit ?
+2023-04-13 20:30:11.468 DEBUG 4308 --- [http-nio-8090-exec-5] stByLimitNumAndIsPublishedAndIsRecommend : ==> Parameters: 5(Integer)
+2023-04-13 20:30:11.470 DEBUG 4308 --- [http-nio-8090-exec-5] stByLimitNumAndIsPublishedAndIsRecommend : <==      Total: 2
+2023-04-13 20:30:11.476 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.TagMapper.getTagListByBlogId  : ==>  Preparing: select t.id, t.tag_name, t.color from blog_tag as bt left join tag as t on bt.tag_id = t.id where bt.blog_id = ?
+2023-04-13 20:30:11.477 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.TagMapper.getTagListByBlogId  : ==> Parameters: 1(Long)
+2023-04-13 20:30:11.479 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.TagMapper.getTagListByBlogId  : <==      Total: 2
+2023-04-13 20:30:11.481 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.TagMapper.getTagListByBlogId  : ==>  Preparing: select t.id, t.tag_name, t.color from blog_tag as bt left join tag as t on bt.tag_id = t.id where bt.blog_id = ?
+2023-04-13 20:30:11.481 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.TagMapper.getTagListByBlogId  : ==> Parameters: 2(Long)
+2023-04-13 20:30:11.482 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.TagMapper.getTagListByBlogId  : <==      Total: 2
+2023-04-13 20:30:11.530  INFO 4308 --- [task-1] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Initializing Analyzer data structures
+2023-04-13 20:30:12.024  INFO 4308 --- [task-1] n.b.p.u.AbstractUserAgentAnalyzerDirect  : Built in 494 msec : Hashmap 114881, Ranges map:2900
+2023-04-13 20:30:12.074 DEBUG 4308 --- [task-1] c.r.mapper.VisitorMapper.saveVisitor     : ==>  Preparing: insert into visitor (uuid, ip, ip_source, os, browser, create_time, last_time, pv, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:30:12.074 DEBUG 4308 --- [task-2] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:30:12.078 DEBUG 4308 --- [task-2] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /blogs(String), GET(String), {"pageNum":1}(String), 访问页面(String), 首页(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 113(Integer), 2023-04-13 20:30:11.524(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:30:12.078 DEBUG 4308 --- [task-1] c.r.mapper.VisitorMapper.saveVisitor     : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 2023-04-13 20:30:11.521(Timestamp), 2023-04-13 20:30:11.521(Timestamp), 0(Integer), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:30:12.081 DEBUG 4308 --- [task-1] c.r.mapper.VisitorMapper.saveVisitor     : <==    Updates: 1
+2023-04-13 20:30:12.081 DEBUG 4308 --- [task-2] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:30:14.077 DEBUG 4308 --- [http-nio-8090-exec-6] com.rawchen.mapper.AboutMapper.getList   : ==>  Preparing: select * from about
+2023-04-13 20:30:14.078 DEBUG 4308 --- [http-nio-8090-exec-6] com.rawchen.mapper.AboutMapper.getList   : ==> Parameters: 
+2023-04-13 20:30:14.080 DEBUG 4308 --- [http-nio-8090-exec-6] com.rawchen.mapper.AboutMapper.getList   : <==      Total: 4
+2023-04-13 20:30:14.085 DEBUG 4308 --- [task-3] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:30:14.086 DEBUG 4308 --- [task-3] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /about(String), GET(String), {}(String), 访问页面(String), 关于我(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 10(Integer), 2023-04-13 20:30:14.083(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:30:14.088 DEBUG 4308 --- [task-3] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:30:14.237 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.A.getAboutCommentEnabled           : ==>  Preparing: select value from about where name_en = "commentEnabled"
+2023-04-13 20:30:14.237 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.A.getAboutCommentEnabled           : ==> Parameters: 
+2023-04-13 20:30:14.239 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.A.getAboutCommentEnabled           : <==      Total: 1
+2023-04-13 20:30:14.254 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:30:14.255 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 1(Integer)
+2023-04-13 20:30:14.257 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:30:14.260 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:30:14.261 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 1(Integer), -1(Long)
+2023-04-13 20:30:14.262 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:30:14.262 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc LIMIT ?
+2023-04-13 20:30:14.263 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), -1(Long), 5(Integer)
+2023-04-13 20:30:14.264 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : <==      Total: 1
+2023-04-13 20:30:14.265 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc
+2023-04-13 20:30:14.266 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), 12(Long)
+2023-04-13 20:30:14.267 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : <==      Total: 0
+2023-04-13 20:30:19.652 DEBUG 4308 --- [task-4] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:30:19.652 DEBUG 4308 --- [task-4] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /blogs(String), GET(String), {"pageNum":1}(String), 访问页面(String), 首页(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 8(Integer), 2023-04-13 20:30:19.649(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:30:19.654 DEBUG 4308 --- [task-4] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:30:24.145 DEBUG 4308 --- [http-nio-8090-exec-1] com.rawchen.config.JwtLoginFilter        : Request is to process authentication
+2023-04-13 20:30:24.217 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.UserMapper.findByUsername     : ==>  Preparing: select * from user where username = ? limit 1
+2023-04-13 20:30:24.217 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.UserMapper.findByUsername     : ==> Parameters: admin(String)
+2023-04-13 20:30:24.219 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.UserMapper.findByUsername     : <==      Total: 1
+2023-04-13 20:30:24.701 DEBUG 4308 --- [task-5] c.r.mapper.LoginLogMapper.saveLoginLog   : ==>  Preparing: insert into login_log (username, ip, ip_source, os, browser, status, description, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:30:24.701 DEBUG 4308 --- [task-5] c.r.mapper.LoginLogMapper.saveLoginLog   : ==> Parameters: admin(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), true(Boolean), 登录成功(String), 2023-04-13 20:30:24.697(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:30:24.703 DEBUG 4308 --- [task-5] c.r.mapper.LoginLogMapper.saveLoginLog   : <==    Updates: 1
+2023-04-13 20:30:24.743 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.V.countVisitLogByToday             : ==>  Preparing: select count(*) from visit_log where date(create_time) = curdate()
+2023-04-13 20:30:24.743 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.V.countVisitLogByToday             : ==> Parameters: 
+2023-04-13 20:30:24.745 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.V.countVisitLogByToday             : <==      Total: 1
+2023-04-13 20:30:24.747 DEBUG 4308 --- [http-nio-8090-exec-3] com.rawchen.mapper.BlogMapper.countBlog  : ==>  Preparing: select count(*) from blog
+2023-04-13 20:30:24.748 DEBUG 4308 --- [http-nio-8090-exec-3] com.rawchen.mapper.BlogMapper.countBlog  : ==> Parameters: 
+2023-04-13 20:30:24.750 DEBUG 4308 --- [http-nio-8090-exec-3] com.rawchen.mapper.BlogMapper.countBlog  : <==      Total: 1
+2023-04-13 20:30:24.750 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.CommentMapper.countComment    : ==>  Preparing: select count(*) from comment
+2023-04-13 20:30:24.751 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.CommentMapper.countComment    : ==> Parameters: 
+2023-04-13 20:30:24.752 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.CommentMapper.countComment    : <==      Total: 1
+2023-04-13 20:30:24.753 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.B.getCategoryBlogCountList         : ==>  Preparing: select category_id, count(category_id) as blog_count from blog group by category_id
+2023-04-13 20:30:24.753 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.B.getCategoryBlogCountList         : ==> Parameters: 
+2023-04-13 20:30:24.754 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.B.getCategoryBlogCountList         : <==      Total: 2
+2023-04-13 20:30:24.754 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.CategoryMapper.getCategoryList     : ==>  Preparing: select id, category_name from category order by id desc
+2023-04-13 20:30:24.755 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.CategoryMapper.getCategoryList     : ==> Parameters: 
+2023-04-13 20:30:24.756 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.CategoryMapper.getCategoryList     : <==      Total: 3
+2023-04-13 20:30:24.756 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.TagMapper.getTagBlogCount     : ==>  Preparing: select tag_id, count(tag_id) as blog_count from blog_tag group by tag_id
+2023-04-13 20:30:24.756 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.TagMapper.getTagBlogCount     : ==> Parameters: 
+2023-04-13 20:30:24.757 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.TagMapper.getTagBlogCount     : <==      Total: 2
+2023-04-13 20:30:24.758 DEBUG 4308 --- [http-nio-8090-exec-3] com.rawchen.mapper.TagMapper.getTagList  : ==>  Preparing: select id, tag_name, color from tag order by id desc
+2023-04-13 20:30:24.758 DEBUG 4308 --- [http-nio-8090-exec-3] com.rawchen.mapper.TagMapper.getTagList  : ==> Parameters: 
+2023-04-13 20:30:24.759 DEBUG 4308 --- [http-nio-8090-exec-3] com.rawchen.mapper.TagMapper.getTagList  : <==      Total: 2
+2023-04-13 20:30:24.760 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.V.getVisitRecordListByLimit        : ==>  Preparing: select pv, uv, date from visit_record order by id desc limit ?
+2023-04-13 20:30:24.760 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.V.getVisitRecordListByLimit        : ==> Parameters: 30(Integer)
+2023-04-13 20:30:24.762 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.V.getVisitRecordListByLimit        : <==      Total: 10
+2023-04-13 20:30:24.762 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.C.getCityVisitorList               : ==>  Preparing: select city, uv from city_visitor order by uv desc
+2023-04-13 20:30:24.762 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.C.getCityVisitorList               : ==> Parameters: 
+2023-04-13 20:30:24.763 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.C.getCityVisitorList               : <==      Total: 0
+2023-04-13 20:46:10.773 DEBUG 4308 --- [http-nio-8090-exec-7] foListByCategoryNameAndIsPublished_COUNT : ==>  Preparing: SELECT count(0) FROM category AS c LEFT JOIN blog AS b ON b.category_id = c.id WHERE c.category_name = ? AND b.is_published = true
+2023-04-13 20:46:10.773 DEBUG 4308 --- [http-nio-8090-exec-7] foListByCategoryNameAndIsPublished_COUNT : ==> Parameters: 嘟嘟(String)
+2023-04-13 20:46:10.775 DEBUG 4308 --- [http-nio-8090-exec-7] foListByCategoryNameAndIsPublished_COUNT : <==      Total: 1
+2023-04-13 20:46:10.779 DEBUG 4308 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:10.779 DEBUG 4308 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /category(String), GET(String), {"categoryName":"嘟嘟","pageNum":1}(String), 查看分类(String), 嘟嘟(String), 分类名称：嘟嘟，第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 9(Integer), 2023-04-13 20:46:10.777(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:10.782 DEBUG 4308 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:46:11.385 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.m.B.getGroupYearMonthByIsPublished   : ==>  Preparing: select date_format(create_time, "%Y年%m月") from blog where is_published = true group by date_format(create_time, "%Y年%m月") order by date_format(create_time, "%Y年%m月") desc
+2023-04-13 20:46:11.386 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.m.B.getGroupYearMonthByIsPublished   : ==> Parameters: 
+2023-04-13 20:46:11.387 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.m.B.getGroupYearMonthByIsPublished   : <==      Total: 1
+2023-04-13 20:46:11.388 DEBUG 4308 --- [http-nio-8090-exec-9] ArchiveBlogListByYearMonthAndIsPublished : ==>  Preparing: select id, title, password, date_format(create_time, "%d日") as create_day from blog where date_format(create_time, "%Y年%m月") = ? and is_published = true order by create_time desc
+2023-04-13 20:46:11.388 DEBUG 4308 --- [http-nio-8090-exec-9] ArchiveBlogListByYearMonthAndIsPublished : ==> Parameters: 2021年03月(String)
+2023-04-13 20:46:11.389 DEBUG 4308 --- [http-nio-8090-exec-9] ArchiveBlogListByYearMonthAndIsPublished : <==      Total: 2
+2023-04-13 20:46:11.389 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.m.BlogMapper.countBlogByIsPublished  : ==>  Preparing: select count(*) from blog where is_published = true
+2023-04-13 20:46:11.390 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.m.BlogMapper.countBlogByIsPublished  : ==> Parameters: 
+2023-04-13 20:46:11.391 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.m.BlogMapper.countBlogByIsPublished  : <==      Total: 1
+2023-04-13 20:46:11.396 DEBUG 4308 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:11.396 DEBUG 4308 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /archives(String), GET(String), {}(String), 访问页面(String), 文章归档(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 13(Integer), 2023-04-13 20:46:11.394(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:11.399 DEBUG 4308 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:46:12.047 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:46:12.048 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:46:12.049 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:46:12.050 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:46:12.050 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:46:12.052 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 1
+2023-04-13 20:46:12.058 DEBUG 4308 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:12.059 DEBUG 4308 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 13(Integer), 2023-04-13 20:46:12.057(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:12.060 DEBUG 4308 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:46:12.585 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.FriendMapper.getFriendVOList  : ==>  Preparing: select nickname, description, website, avatar from friend where is_published = true order by rand()
+2023-04-13 20:46:12.585 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.FriendMapper.getFriendVOList  : ==> Parameters: 
+2023-04-13 20:46:12.587 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.FriendMapper.getFriendVOList  : <==      Total: 0
+2023-04-13 20:46:12.590 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.SiteSettingMapper.getFriendInfo    : ==>  Preparing: select * from site_setting where type = 4
+2023-04-13 20:46:12.590 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.SiteSettingMapper.getFriendInfo    : ==> Parameters: 
+2023-04-13 20:46:12.592 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.SiteSettingMapper.getFriendInfo    : <==      Total: 2
+2023-04-13 20:46:12.598 DEBUG 4308 --- [task-9] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:12.598 DEBUG 4308 --- [task-9] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /friends(String), GET(String), {}(String), 访问页面(String), 友链(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 15(Integer), 2023-04-13 20:46:12.596(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:12.600 DEBUG 4308 --- [task-9] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:46:12.639 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:46:12.639 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 2(Integer)
+2023-04-13 20:46:12.641 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:46:12.644 DEBUG 4308 --- [http-nio-8090-exec-6] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:46:12.644 DEBUG 4308 --- [http-nio-8090-exec-6] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 2(Integer), -1(Long)
+2023-04-13 20:46:12.646 DEBUG 4308 --- [http-nio-8090-exec-6] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:46:43.511 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:46:43.511 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:46:43.513 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:46:43.514 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:46:43.514 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:46:43.516 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 1
+2023-04-13 20:46:43.520 DEBUG 4308 --- [task-10] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:43.520 DEBUG 4308 --- [task-10] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 8(Integer), 2023-04-13 20:46:43.518(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:43.522 DEBUG 4308 --- [task-10] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:46:46.316 DEBUG 4308 --- [task-11] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:46.316 DEBUG 4308 --- [task-11] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /archives(String), GET(String), {}(String), 访问页面(String), 文章归档(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 2(Integer), 2023-04-13 20:46:46.313(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:46.318 DEBUG 4308 --- [task-11] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:46:49.175 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:46:49.175 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:46:49.177 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:46:49.177 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:46:49.177 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:46:49.179 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 1
+2023-04-13 20:46:49.182 DEBUG 4308 --- [task-12] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:49.183 DEBUG 4308 --- [task-12] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 7(Integer), 2023-04-13 20:46:49.181(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:49.185 DEBUG 4308 --- [task-12] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:46:49.837 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.mapper.FriendMapper.getFriendVOList  : ==>  Preparing: select nickname, description, website, avatar from friend where is_published = true order by rand()
+2023-04-13 20:46:49.837 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.mapper.FriendMapper.getFriendVOList  : ==> Parameters: 
+2023-04-13 20:46:49.838 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.mapper.FriendMapper.getFriendVOList  : <==      Total: 0
+2023-04-13 20:46:49.843 DEBUG 4308 --- [task-13] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:49.844 DEBUG 4308 --- [task-13] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /friends(String), GET(String), {}(String), 访问页面(String), 友链(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 6(Integer), 2023-04-13 20:46:49.842(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:49.846 DEBUG 4308 --- [task-13] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:46:49.869 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:46:49.869 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 2(Integer)
+2023-04-13 20:46:49.871 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:46:49.872 DEBUG 4308 --- [http-nio-8090-exec-10] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:46:49.872 DEBUG 4308 --- [http-nio-8090-exec-10] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 2(Integer), -1(Long)
+2023-04-13 20:46:49.874 DEBUG 4308 --- [http-nio-8090-exec-10] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:46:51.412 DEBUG 4308 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:51.413 DEBUG 4308 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /about(String), GET(String), {}(String), 访问页面(String), 关于我(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 2(Integer), 2023-04-13 20:46:51.411(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:51.415 DEBUG 4308 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:46:51.435 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.A.getAboutCommentEnabled           : ==>  Preparing: select value from about where name_en = "commentEnabled"
+2023-04-13 20:46:51.435 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.A.getAboutCommentEnabled           : ==> Parameters: 
+2023-04-13 20:46:51.438 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.A.getAboutCommentEnabled           : <==      Total: 1
+2023-04-13 20:46:51.439 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:46:51.440 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 1(Integer)
+2023-04-13 20:46:51.441 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:46:51.442 DEBUG 4308 --- [http-nio-8090-exec-5] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:46:51.443 DEBUG 4308 --- [http-nio-8090-exec-5] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 1(Integer), -1(Long)
+2023-04-13 20:46:51.444 DEBUG 4308 --- [http-nio-8090-exec-5] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:46:51.445 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc LIMIT ?
+2023-04-13 20:46:51.445 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), -1(Long), 5(Integer)
+2023-04-13 20:46:51.446 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : <==      Total: 1
+2023-04-13 20:46:51.446 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc
+2023-04-13 20:46:51.447 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), 12(Long)
+2023-04-13 20:46:51.447 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : <==      Total: 0
+2023-04-13 20:46:55.771 DEBUG 4308 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:55.772 DEBUG 4308 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /blogs(String), GET(String), {"pageNum":1}(String), 访问页面(String), 首页(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 9(Integer), 2023-04-13 20:46:55.768(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:55.773 DEBUG 4308 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:46:58.841 DEBUG 4308 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:46:58.842 DEBUG 4308 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /archives(String), GET(String), {}(String), 访问页面(String), 文章归档(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 2(Integer), 2023-04-13 20:46:58.839(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:46:58.844 DEBUG 4308 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:47:00.216 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:47:00.216 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:47:00.218 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:47:00.219 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:47:00.219 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:47:00.220 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 1
+2023-04-13 20:47:00.224 DEBUG 4308 --- [task-9] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:47:00.224 DEBUG 4308 --- [task-9] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 8(Integer), 2023-04-13 20:47:00.223(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:47:00.226 DEBUG 4308 --- [task-9] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:47:00.772 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.FriendMapper.getFriendVOList  : ==>  Preparing: select nickname, description, website, avatar from friend where is_published = true order by rand()
+2023-04-13 20:47:00.772 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.FriendMapper.getFriendVOList  : ==> Parameters: 
+2023-04-13 20:47:00.774 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.FriendMapper.getFriendVOList  : <==      Total: 0
+2023-04-13 20:47:00.779 DEBUG 4308 --- [task-10] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:47:00.781 DEBUG 4308 --- [task-10] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /friends(String), GET(String), {}(String), 访问页面(String), 友链(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 5(Integer), 2023-04-13 20:47:00.778(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:47:00.783 DEBUG 4308 --- [task-10] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:47:00.804 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:47:00.804 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 2(Integer)
+2023-04-13 20:47:00.805 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:47:00.806 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:47:00.806 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 2(Integer), -1(Long)
+2023-04-13 20:47:00.808 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:47:01.413 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:47:01.413 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:47:01.415 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:47:01.415 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:47:01.416 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:47:01.417 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 1
+2023-04-13 20:47:01.421 DEBUG 4308 --- [task-11] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:47:01.422 DEBUG 4308 --- [task-11] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 7(Integer), 2023-04-13 20:47:01.42(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:47:01.424 DEBUG 4308 --- [task-11] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:47:29.985 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.m.MomentMapper.addLikeByMomentId     : ==>  Preparing: update moment set likes=likes + 1 where id = ?
+2023-04-13 20:47:29.986 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.m.MomentMapper.addLikeByMomentId     : ==> Parameters: 2(Long)
+2023-04-13 20:47:29.987 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.m.MomentMapper.addLikeByMomentId     : <==    Updates: 1
+2023-04-13 20:47:30.000 DEBUG 4308 --- [task-12] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:47:30.000 DEBUG 4308 --- [task-12] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moment/like/2(String), POST(String), {"id":2}(String), 点赞动态(String), (String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 14(Integer), 2023-04-13 20:47:29.999(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:47:30.002 DEBUG 4308 --- [task-12] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:47:37.354 DEBUG 4308 --- [task-13] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:47:37.355 DEBUG 4308 --- [task-13] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /about(String), GET(String), {}(String), 访问页面(String), 关于我(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 2(Integer), 2023-04-13 20:47:37.351(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:47:37.357 DEBUG 4308 --- [task-13] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:47:37.380 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.A.getAboutCommentEnabled           : ==>  Preparing: select value from about where name_en = "commentEnabled"
+2023-04-13 20:47:37.380 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.A.getAboutCommentEnabled           : ==> Parameters: 
+2023-04-13 20:47:37.382 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.A.getAboutCommentEnabled           : <==      Total: 1
+2023-04-13 20:47:37.382 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:47:37.382 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 1(Integer)
+2023-04-13 20:47:37.384 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:47:37.385 DEBUG 4308 --- [http-nio-8090-exec-5] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:47:37.385 DEBUG 4308 --- [http-nio-8090-exec-5] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 1(Integer), -1(Long)
+2023-04-13 20:47:37.386 DEBUG 4308 --- [http-nio-8090-exec-5] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:47:37.386 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc LIMIT ?
+2023-04-13 20:47:37.387 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), -1(Long), 5(Integer)
+2023-04-13 20:47:37.388 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : <==      Total: 1
+2023-04-13 20:47:37.388 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc
+2023-04-13 20:47:37.389 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), 12(Long)
+2023-04-13 20:47:37.390 DEBUG 4308 --- [http-nio-8090-exec-5] tPageCommentListByPageAndParentCommentId : <==      Total: 0
+2023-04-13 20:47:38.007 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.FriendMapper.getFriendVOList  : ==>  Preparing: select nickname, description, website, avatar from friend where is_published = true order by rand()
+2023-04-13 20:47:38.007 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.FriendMapper.getFriendVOList  : ==> Parameters: 
+2023-04-13 20:47:38.009 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.FriendMapper.getFriendVOList  : <==      Total: 0
+2023-04-13 20:47:38.013 DEBUG 4308 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:47:38.013 DEBUG 4308 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /friends(String), GET(String), {}(String), 访问页面(String), 友链(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 4(Integer), 2023-04-13 20:47:38.012(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:47:38.016 DEBUG 4308 --- [task-6] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:47:38.041 DEBUG 4308 --- [http-nio-8090-exec-4] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:47:38.041 DEBUG 4308 --- [http-nio-8090-exec-4] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 2(Integer)
+2023-04-13 20:47:38.044 DEBUG 4308 --- [http-nio-8090-exec-4] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:47:38.045 DEBUG 4308 --- [http-nio-8090-exec-4] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:47:38.046 DEBUG 4308 --- [http-nio-8090-exec-4] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 2(Integer), -1(Long)
+2023-04-13 20:47:38.048 DEBUG 4308 --- [http-nio-8090-exec-4] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:47:38.630 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:47:38.630 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:47:38.632 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:47:38.633 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:47:38.633 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:47:38.634 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 1
+2023-04-13 20:47:38.637 DEBUG 4308 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:47:38.638 DEBUG 4308 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 6(Integer), 2023-04-13 20:47:38.636(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:47:38.639 DEBUG 4308 --- [task-7] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:47:39.269 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.FriendMapper.getFriendVOList  : ==>  Preparing: select nickname, description, website, avatar from friend where is_published = true order by rand()
+2023-04-13 20:47:39.269 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.FriendMapper.getFriendVOList  : ==> Parameters: 
+2023-04-13 20:47:39.271 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.FriendMapper.getFriendVOList  : <==      Total: 0
+2023-04-13 20:47:39.276 DEBUG 4308 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:47:39.276 DEBUG 4308 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /friends(String), GET(String), {}(String), 访问页面(String), 友链(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 6(Integer), 2023-04-13 20:47:39.274(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:47:39.282 DEBUG 4308 --- [task-8] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:47:39.299 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:47:39.299 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 2(Integer)
+2023-04-13 20:47:39.301 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:47:39.302 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:47:39.303 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 2(Integer), -1(Long)
+2023-04-13 20:47:39.304 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:47:43.145 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:47:43.145 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:47:43.147 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:47:43.147 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:47:43.147 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:47:43.149 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 1
+2023-04-13 20:47:43.153 DEBUG 4308 --- [task-9] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:47:43.153 DEBUG 4308 --- [task-9] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 7(Integer), 2023-04-13 20:47:43.151(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:47:43.155 DEBUG 4308 --- [task-9] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:51:21.904 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.saveMoment       : ==>  Preparing: insert into moment (content, create_time, likes, is_published) values (?, ?, ?, ?)
+2023-04-13 20:51:21.905 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.saveMoment       : ==> Parameters: 今天将mysql和redis都部署到docker上了
+同时也在docker上开启动了[meilisearch](https://localhost:17700)的服务，后续准备嵌入文章搜索模块
+ui上，准备新增一个拓展台模块，将github上有意思的服务部署上来
+
+(String), 2023-04-13 20:51:21.9(Timestamp), 0(Integer), true(Boolean)
+2023-04-13 20:51:21.907 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.saveMoment       : <==    Updates: 1
+2023-04-13 20:51:21.923 DEBUG 4308 --- [task-14] c.r.m.O.saveOperationLog                 : ==>  Preparing: insert into operation_log (username, uri, method, param, description, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:51:21.923 DEBUG 4308 --- [task-14] c.r.m.O.saveOperationLog                 : ==> Parameters: admin(String), /admin/moment(String), POST(String), {"moment":{"id":3,"content":"今天将mysql和redis都部署到docker上了\n同时也在docker上开启动了[meilisearch](https://localhost:17700)的服务，后续准备嵌入文章搜索模块\nui上，准备新增一个拓展台模块，将github上有意思的服务部署上来\n\n","createTime":1681390281900,"likes":0,"published":true}}(String), 发布动态(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 18(Integer), 2023-04-13 20:51:21.919(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:51:21.931 DEBUG 4308 --- [task-14] c.r.m.O.saveOperationLog                 : <==    Updates: 1
+2023-04-13 20:51:21.969 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:51:21.969 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:51:21.972 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:51:21.972 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:51:21.972 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 10(Integer)
+2023-04-13 20:51:21.974 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 2
+2023-04-13 20:51:25.733 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:51:25.733 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:51:25.735 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:51:25.735 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:51:25.736 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:51:25.737 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 2
+2023-04-13 20:51:25.741 DEBUG 4308 --- [task-15] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:51:25.742 DEBUG 4308 --- [task-15] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 7(Integer), 2023-04-13 20:51:25.739(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:51:25.743 DEBUG 4308 --- [task-15] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:51:25.744 DEBUG 4308 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : ==>  Preparing: select id, title, password, create_time, first_picture from blog where is_published = true and is_recommend = true order by rand() limit ?
+2023-04-13 20:51:25.745 DEBUG 4308 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : ==> Parameters: 5(Integer)
+2023-04-13 20:51:25.746 DEBUG 4308 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : <==      Total: 2
+2023-04-13 20:51:47.417 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentById    : ==>  Preparing: select id, content, create_time, likes, is_published from moment where id = ?
+2023-04-13 20:51:47.418 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentById    : ==> Parameters: 3(Long)
+2023-04-13 20:51:47.419 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.MomentMapper.getMomentById    : <==      Total: 1
+2023-04-13 20:51:53.398 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.mapper.MomentMapper.updateMoment     : ==>  Preparing: update moment set content=?, create_time=?, likes=?, is_published=? where id = ?
+2023-04-13 20:51:53.399 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.mapper.MomentMapper.updateMoment     : ==> Parameters: 今天将mysql和redis都部署到docker上了
+同时也在docker上开启动了[meilisearch](localhost:17700)的服务，后续准备嵌入文章搜索模块
+ui上，准备新增一个拓展台模块，将github上有意思的服务部署上来
+
+(String), 2023-04-13 20:51:22.0(Timestamp), 0(Integer), true(Boolean), 3(Long)
+2023-04-13 20:51:53.408 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.mapper.MomentMapper.updateMoment     : <==    Updates: 1
+2023-04-13 20:51:53.411 DEBUG 4308 --- [task-16] c.r.m.O.saveOperationLog                 : ==>  Preparing: insert into operation_log (username, uri, method, param, description, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:51:53.411 DEBUG 4308 --- [task-16] c.r.m.O.saveOperationLog                 : ==> Parameters: admin(String), /admin/moment(String), PUT(String), {"moment":{"id":3,"content":"今天将mysql和redis都部署到docker上了\n同时也在docker上开启动了[meilisearch](localhost:17700)的服务，后续准备嵌入文章搜索模块\nui上，准备新增一个拓展台模块，将github上有意思的服务部署上来\n\n","createTime":1681390282000,"likes":0,"published":true}}(String), 更新动态(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 12(Integer), 2023-04-13 20:51:53.409(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:51:53.413 DEBUG 4308 --- [task-16] c.r.m.O.saveOperationLog                 : <==    Updates: 1
+2023-04-13 20:51:53.439 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:51:53.439 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:51:53.440 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:51:53.441 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:51:53.441 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 10(Integer)
+2023-04-13 20:51:53.444 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 2
+2023-04-13 20:51:57.598 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:51:57.598 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:51:57.600 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:51:57.600 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:51:57.601 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:51:57.621 DEBUG 4308 --- [http-nio-8090-exec-1] stByLimitNumAndIsPublishedAndIsRecommend : ==>  Preparing: select id, title, password, create_time, first_picture from blog where is_published = true and is_recommend = true order by rand() limit ?
+2023-04-13 20:51:57.621 DEBUG 4308 --- [http-nio-8090-exec-1] stByLimitNumAndIsPublishedAndIsRecommend : ==> Parameters: 5(Integer)
+2023-04-13 20:51:57.622 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 2
+2023-04-13 20:51:57.624 DEBUG 4308 --- [http-nio-8090-exec-1] stByLimitNumAndIsPublishedAndIsRecommend : <==      Total: 2
+2023-04-13 20:51:57.627 DEBUG 4308 --- [task-17] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:51:57.627 DEBUG 4308 --- [task-17] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 26(Integer), 2023-04-13 20:51:57.625(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:51:57.629 DEBUG 4308 --- [task-17] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:52:09.466 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.MomentMapper.getMomentById    : ==>  Preparing: select id, content, create_time, likes, is_published from moment where id = ?
+2023-04-13 20:52:09.467 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.MomentMapper.getMomentById    : ==> Parameters: 3(Long)
+2023-04-13 20:52:09.468 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.mapper.MomentMapper.getMomentById    : <==      Total: 1
+2023-04-13 20:52:17.005 DEBUG 4308 --- [http-nio-8090-exec-4] c.r.mapper.MomentMapper.updateMoment     : ==>  Preparing: update moment set content=?, create_time=?, likes=?, is_published=? where id = ?
+2023-04-13 20:52:17.005 DEBUG 4308 --- [http-nio-8090-exec-4] c.r.mapper.MomentMapper.updateMoment     : ==> Parameters: 今天将mysql和redis都部署到docker上了
+同时也在docker上开启动了[meilisearch](http://localhost:17700)的服务，后续准备嵌入文章搜索模块
+ui上，准备新增一个拓展台模块，将github上有意思的服务部署上来
+
+(String), 2023-04-13 20:51:22.0(Timestamp), 0(Integer), true(Boolean), 3(Long)
+2023-04-13 20:52:17.018 DEBUG 4308 --- [http-nio-8090-exec-4] c.r.mapper.MomentMapper.updateMoment     : <==    Updates: 1
+2023-04-13 20:52:17.021 DEBUG 4308 --- [task-18] c.r.m.O.saveOperationLog                 : ==>  Preparing: insert into operation_log (username, uri, method, param, description, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:52:17.022 DEBUG 4308 --- [task-18] c.r.m.O.saveOperationLog                 : ==> Parameters: admin(String), /admin/moment(String), PUT(String), {"moment":{"id":3,"content":"今天将mysql和redis都部署到docker上了\n同时也在docker上开启动了[meilisearch](http://localhost:17700)的服务，后续准备嵌入文章搜索模块\nui上，准备新增一个拓展台模块，将github上有意思的服务部署上来\n\n","createTime":1681390282000,"likes":0,"published":true}}(String), 更新动态(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 15(Integer), 2023-04-13 20:52:17.02(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:52:17.024 DEBUG 4308 --- [task-18] c.r.m.O.saveOperationLog                 : <==    Updates: 1
+2023-04-13 20:52:17.051 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:52:17.051 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:52:17.053 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:52:17.053 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:52:17.053 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 10(Integer)
+2023-04-13 20:52:17.054 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 2
+2023-04-13 20:52:20.398 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:52:20.398 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:52:20.400 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:52:20.401 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:52:20.401 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:52:20.403 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 2
+2023-04-13 20:52:20.403 DEBUG 4308 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : ==>  Preparing: select id, title, password, create_time, first_picture from blog where is_published = true and is_recommend = true order by rand() limit ?
+2023-04-13 20:52:20.403 DEBUG 4308 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : ==> Parameters: 5(Integer)
+2023-04-13 20:52:20.405 DEBUG 4308 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : <==      Total: 2
+2023-04-13 20:52:20.407 DEBUG 4308 --- [task-19] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:52:20.408 DEBUG 4308 --- [task-19] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 7(Integer), 2023-04-13 20:52:20.405(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:52:20.410 DEBUG 4308 --- [task-19] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:53:38.130 DEBUG 4308 --- [task-20] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:53:38.131 DEBUG 4308 --- [task-20] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /archives(String), GET(String), {}(String), 访问页面(String), 文章归档(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 3(Integer), 2023-04-13 20:53:38.128(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:53:38.132 DEBUG 4308 --- [task-20] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:53:41.792 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.MomentMapper.getMomentList_COUNT   : ==>  Preparing: SELECT count(0) FROM moment
+2023-04-13 20:53:41.792 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.MomentMapper.getMomentList_COUNT   : ==> Parameters: 
+2023-04-13 20:53:41.794 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.MomentMapper.getMomentList_COUNT   : <==      Total: 1
+2023-04-13 20:53:41.794 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.getMomentList    : ==>  Preparing: SELECT id, content, create_time, likes, is_published FROM moment order by create_time desc LIMIT ?
+2023-04-13 20:53:41.795 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.getMomentList    : ==> Parameters: 5(Integer)
+2023-04-13 20:53:41.796 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.mapper.MomentMapper.getMomentList    : <==      Total: 2
+2023-04-13 20:53:41.801 DEBUG 4308 --- [task-21] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:53:41.801 DEBUG 4308 --- [task-21] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /moments(String), GET(String), {"pageNum":1,"jwt":""}(String), 访问页面(String), 动态(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 8(Integer), 2023-04-13 20:53:41.798(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:53:41.803 DEBUG 4308 --- [task-21] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:53:44.357 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.FriendMapper.getFriendVOList  : ==>  Preparing: select nickname, description, website, avatar from friend where is_published = true order by rand()
+2023-04-13 20:53:44.357 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.FriendMapper.getFriendVOList  : ==> Parameters: 
+2023-04-13 20:53:44.360 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.FriendMapper.getFriendVOList  : <==      Total: 0
+2023-04-13 20:53:44.366 DEBUG 4308 --- [task-22] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:53:44.367 DEBUG 4308 --- [task-22] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /friends(String), GET(String), {}(String), 访问页面(String), 友链(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 7(Integer), 2023-04-13 20:53:44.364(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:53:44.369 DEBUG 4308 --- [task-22] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:53:44.549 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:53:44.550 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 2(Integer)
+2023-04-13 20:53:44.551 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:53:44.552 DEBUG 4308 --- [http-nio-8090-exec-3] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:53:44.552 DEBUG 4308 --- [http-nio-8090-exec-3] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 2(Integer), -1(Long)
+2023-04-13 20:53:44.554 DEBUG 4308 --- [http-nio-8090-exec-3] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:53:48.179 DEBUG 4308 --- [task-23] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:53:48.179 DEBUG 4308 --- [task-23] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /about(String), GET(String), {}(String), 访问页面(String), 关于我(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 2(Integer), 2023-04-13 20:53:48.177(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:53:48.181 DEBUG 4308 --- [task-23] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:53:48.204 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.A.getAboutCommentEnabled           : ==>  Preparing: select value from about where name_en = "commentEnabled"
+2023-04-13 20:53:48.204 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.A.getAboutCommentEnabled           : ==> Parameters: 
+2023-04-13 20:53:48.206 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.A.getAboutCommentEnabled           : <==      Total: 1
+2023-04-13 20:53:48.207 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:53:48.207 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 1(Integer)
+2023-04-13 20:53:48.208 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:53:48.210 DEBUG 4308 --- [http-nio-8090-exec-6] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:53:48.210 DEBUG 4308 --- [http-nio-8090-exec-6] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 1(Integer), -1(Long)
+2023-04-13 20:53:48.212 DEBUG 4308 --- [http-nio-8090-exec-6] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:53:48.212 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc LIMIT ?
+2023-04-13 20:53:48.212 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), -1(Long), 5(Integer)
+2023-04-13 20:53:48.214 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : <==      Total: 1
+2023-04-13 20:53:48.214 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc
+2023-04-13 20:53:48.214 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), 12(Long)
+2023-04-13 20:53:48.216 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : <==      Total: 0
+2023-04-13 20:53:49.016 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.FriendMapper.getFriendVOList  : ==>  Preparing: select nickname, description, website, avatar from friend where is_published = true order by rand()
+2023-04-13 20:53:49.017 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.FriendMapper.getFriendVOList  : ==> Parameters: 
+2023-04-13 20:53:49.018 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.FriendMapper.getFriendVOList  : <==      Total: 0
+2023-04-13 20:53:49.024 DEBUG 4308 --- [task-24] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:53:49.024 DEBUG 4308 --- [task-24] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /friends(String), GET(String), {}(String), 访问页面(String), 友链(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 5(Integer), 2023-04-13 20:53:49.021(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:53:49.026 DEBUG 4308 --- [task-24] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:53:49.051 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:53:49.051 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 2(Integer)
+2023-04-13 20:53:49.053 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:53:49.054 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:53:49.054 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 2(Integer), -1(Long)
+2023-04-13 20:53:49.056 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:53:59.283 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.m.FriendMapper.getFriendList_COUNT   : ==>  Preparing: SELECT count(0) FROM friend
+2023-04-13 20:53:59.283 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.m.FriendMapper.getFriendList_COUNT   : ==> Parameters: 
+2023-04-13 20:53:59.285 DEBUG 4308 --- [http-nio-8090-exec-9] c.r.m.FriendMapper.getFriendList_COUNT   : <==      Total: 1
+2023-04-13 20:53:59.293 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.SiteSettingMapper.getFriendInfo    : ==>  Preparing: select * from site_setting where type = 4
+2023-04-13 20:53:59.293 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.SiteSettingMapper.getFriendInfo    : ==> Parameters: 
+2023-04-13 20:53:59.295 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.SiteSettingMapper.getFriendInfo    : <==      Total: 2
+2023-04-13 20:55:07.149 DEBUG 4308 --- [http-nio-8090-exec-4] c.r.m.S.updateFriendInfoContent          : ==>  Preparing: update site_setting set value=? where name_en = 'friendContent'
+2023-04-13 20:55:07.149 DEBUG 4308 --- [http-nio-8090-exec-4] c.r.m.S.updateFriendInfoContent          : ==> Parameters: 随机排序，不分先后。欢迎交换友链~(￣▽￣)~*
+
+* 昵称：WTFOUR
+* 一句话：7000转干他！
+* 网址：[https://wtfour.com](https://wtfour.com)
+* 头像：[https://wtfour.com/favicon.png](https://wtfour.com/favicon.png)
+
+仅凭个人喜好添加友链，请在收到我的回复邮件后再于贵站添加本站链接。原则上已添加的友链不会删除，如果你发现自己被移除了，恕不另行通知，只需和我一样做就好。
+
+(String)
+2023-04-13 20:55:07.151 DEBUG 4308 --- [http-nio-8090-exec-4] c.r.m.S.updateFriendInfoContent          : <==    Updates: 1
+2023-04-13 20:55:07.166 DEBUG 4308 --- [task-25] c.r.m.O.saveOperationLog                 : ==>  Preparing: insert into operation_log (username, uri, method, param, description, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:55:07.167 DEBUG 4308 --- [task-25] c.r.m.O.saveOperationLog                 : ==> Parameters: admin(String), /admin/friendInfo/content(String), PUT(String), {"map":{"content":"随机排序，不分先后。欢迎交换友链~(￣▽￣)~*\n\n* 昵称：WTFOUR\n* 一句话：7000转干他！\n* 网址：[https://wtfour.com](https://wtfour.com)\n* 头像：[https://wtfour.com/favicon.png](https://wtfour.com/favicon.png)\n\n仅凭个人喜好添加友链，请在收到我的回复邮件后再于贵站添加本站链接。原则上已添加的友链不会删除，如果你发现自己被移除了，恕不另行通知，只需和我一样做就好。\n\n"}}(String), 修改友链页面信息(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 17(Integer), 2023-04-13 20:55:07.164(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:55:07.169 DEBUG 4308 --- [task-25] c.r.m.O.saveOperationLog                 : <==    Updates: 1
+2023-04-13 20:55:07.174 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.SiteSettingMapper.getFriendInfo    : ==>  Preparing: select * from site_setting where type = 4
+2023-04-13 20:55:07.174 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.SiteSettingMapper.getFriendInfo    : ==> Parameters: 
+2023-04-13 20:55:07.175 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.SiteSettingMapper.getFriendInfo    : <==      Total: 2
+2023-04-13 20:55:11.343 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.mapper.FriendMapper.getFriendVOList  : ==>  Preparing: select nickname, description, website, avatar from friend where is_published = true order by rand()
+2023-04-13 20:55:11.343 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.mapper.FriendMapper.getFriendVOList  : ==> Parameters: 
+2023-04-13 20:55:11.345 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.mapper.FriendMapper.getFriendVOList  : <==      Total: 0
+2023-04-13 20:55:11.346 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.SiteSettingMapper.getFriendInfo    : ==>  Preparing: select * from site_setting where type = 4
+2023-04-13 20:55:11.346 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.SiteSettingMapper.getFriendInfo    : ==> Parameters: 
+2023-04-13 20:55:11.347 DEBUG 4308 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : ==>  Preparing: select id, title, password, create_time, first_picture from blog where is_published = true and is_recommend = true order by rand() limit ?
+2023-04-13 20:55:11.348 DEBUG 4308 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : ==> Parameters: 5(Integer)
+2023-04-13 20:55:11.348 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.SiteSettingMapper.getFriendInfo    : <==      Total: 2
+2023-04-13 20:55:11.349 DEBUG 4308 --- [http-nio-8090-exec-2] stByLimitNumAndIsPublishedAndIsRecommend : <==      Total: 2
+2023-04-13 20:55:11.353 DEBUG 4308 --- [task-26] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:55:11.353 DEBUG 4308 --- [task-26] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /friends(String), GET(String), {}(String), 访问页面(String), 友链(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 8(Integer), 2023-04-13 20:55:11.351(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:55:11.355 DEBUG 4308 --- [task-26] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:55:11.507 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:55:11.507 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 2(Integer)
+2023-04-13 20:55:11.508 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:55:11.510 DEBUG 4308 --- [http-nio-8090-exec-8] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:55:11.511 DEBUG 4308 --- [http-nio-8090-exec-8] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 2(Integer), -1(Long)
+2023-04-13 20:55:11.512 DEBUG 4308 --- [http-nio-8090-exec-8] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:55:29.660 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.mapper.FriendMapper.getFriendVOList  : ==>  Preparing: select nickname, description, website, avatar from friend where is_published = true order by rand()
+2023-04-13 20:55:29.660 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.mapper.FriendMapper.getFriendVOList  : ==> Parameters: 
+2023-04-13 20:55:29.661 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.mapper.FriendMapper.getFriendVOList  : <==      Total: 0
+2023-04-13 20:55:29.664 DEBUG 4308 --- [http-nio-8090-exec-9] stByLimitNumAndIsPublishedAndIsRecommend : ==>  Preparing: select id, title, password, create_time, first_picture from blog where is_published = true and is_recommend = true order by rand() limit ?
+2023-04-13 20:55:29.664 DEBUG 4308 --- [http-nio-8090-exec-9] stByLimitNumAndIsPublishedAndIsRecommend : ==> Parameters: 5(Integer)
+2023-04-13 20:55:29.665 DEBUG 4308 --- [http-nio-8090-exec-9] stByLimitNumAndIsPublishedAndIsRecommend : <==      Total: 2
+2023-04-13 20:55:29.667 DEBUG 4308 --- [task-27] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:55:29.667 DEBUG 4308 --- [task-27] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /friends(String), GET(String), {}(String), 访问页面(String), 友链(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 5(Integer), 2023-04-13 20:55:29.664(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:55:29.669 DEBUG 4308 --- [task-27] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:55:29.705 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:55:29.705 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 2(Integer)
+2023-04-13 20:55:29.706 DEBUG 4308 --- [http-nio-8090-exec-1] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:55:29.707 DEBUG 4308 --- [http-nio-8090-exec-1] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:55:29.707 DEBUG 4308 --- [http-nio-8090-exec-1] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 2(Integer), -1(Long)
+2023-04-13 20:55:29.708 DEBUG 4308 --- [http-nio-8090-exec-1] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:55:52.597 DEBUG 4308 --- [task-28] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:55:52.597 DEBUG 4308 --- [task-28] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /about(String), GET(String), {}(String), 访问页面(String), 关于我(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 2(Integer), 2023-04-13 20:55:52.594(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:55:52.599 DEBUG 4308 --- [task-28] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:55:52.622 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.A.getAboutCommentEnabled           : ==>  Preparing: select value from about where name_en = "commentEnabled"
+2023-04-13 20:55:52.622 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.A.getAboutCommentEnabled           : ==> Parameters: 
+2023-04-13 20:55:52.624 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.A.getAboutCommentEnabled           : <==      Total: 1
+2023-04-13 20:55:52.624 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 20:55:52.624 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 1(Integer)
+2023-04-13 20:55:52.625 DEBUG 4308 --- [http-nio-8090-exec-3] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 20:55:52.626 DEBUG 4308 --- [http-nio-8090-exec-3] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 20:55:52.626 DEBUG 4308 --- [http-nio-8090-exec-3] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 1(Integer), -1(Long)
+2023-04-13 20:55:52.627 DEBUG 4308 --- [http-nio-8090-exec-3] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 20:55:52.627 DEBUG 4308 --- [http-nio-8090-exec-3] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc LIMIT ?
+2023-04-13 20:55:52.627 DEBUG 4308 --- [http-nio-8090-exec-3] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), -1(Long), 5(Integer)
+2023-04-13 20:55:52.628 DEBUG 4308 --- [http-nio-8090-exec-3] tPageCommentListByPageAndParentCommentId : <==      Total: 1
+2023-04-13 20:55:52.628 DEBUG 4308 --- [http-nio-8090-exec-3] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc
+2023-04-13 20:55:52.628 DEBUG 4308 --- [http-nio-8090-exec-3] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), 12(Long)
+2023-04-13 20:55:52.629 DEBUG 4308 --- [http-nio-8090-exec-3] tPageCommentListByPageAndParentCommentId : <==      Total: 0
+2023-04-13 20:55:58.414 DEBUG 4308 --- [task-29] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:55:58.414 DEBUG 4308 --- [task-29] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /archives(String), GET(String), {}(String), 访问页面(String), 文章归档(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 2(Integer), 2023-04-13 20:55:58.412(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:55:58.416 DEBUG 4308 --- [task-29] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:56:00.168 DEBUG 4308 --- [http-nio-8090-exec-2] foListByCategoryNameAndIsPublished_COUNT : ==>  Preparing: SELECT count(0) FROM category AS c LEFT JOIN blog AS b ON b.category_id = c.id WHERE c.category_name = ? AND b.is_published = true
+2023-04-13 20:56:00.168 DEBUG 4308 --- [http-nio-8090-exec-2] foListByCategoryNameAndIsPublished_COUNT : ==> Parameters: default(String)
+2023-04-13 20:56:00.169 DEBUG 4308 --- [http-nio-8090-exec-2] foListByCategoryNameAndIsPublished_COUNT : <==      Total: 1
+2023-04-13 20:56:00.170 DEBUG 4308 --- [http-nio-8090-exec-2] BlogInfoListByCategoryNameAndIsPublished : ==>  Preparing: SELECT b.id, b.title, b.description, b.is_top, b.create_time, b.views, b.password, c.category_name FROM category AS c LEFT JOIN blog AS b ON b.category_id = c.id WHERE c.category_name = ? AND b.is_published = true order by is_top desc, create_time desc LIMIT ?
+2023-04-13 20:56:00.171 DEBUG 4308 --- [http-nio-8090-exec-2] BlogInfoListByCategoryNameAndIsPublished : ==> Parameters: default(String), 5(Integer)
+2023-04-13 20:56:00.172 DEBUG 4308 --- [http-nio-8090-exec-2] BlogInfoListByCategoryNameAndIsPublished : <==      Total: 1
+2023-04-13 20:56:00.173 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.TagMapper.getTagListByBlogId  : ==>  Preparing: select t.id, t.tag_name, t.color from blog_tag as bt left join tag as t on bt.tag_id = t.id where bt.blog_id = ?
+2023-04-13 20:56:00.173 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.TagMapper.getTagListByBlogId  : ==> Parameters: 2(Long)
+2023-04-13 20:56:00.174 DEBUG 4308 --- [http-nio-8090-exec-2] c.r.mapper.TagMapper.getTagListByBlogId  : <==      Total: 2
+2023-04-13 20:56:00.179 DEBUG 4308 --- [task-30] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:56:00.179 DEBUG 4308 --- [task-30] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /category(String), GET(String), {"categoryName":"default","pageNum":1}(String), 查看分类(String), default(String), 分类名称：default，第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 11(Integer), 2023-04-13 20:56:00.177(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:56:00.181 DEBUG 4308 --- [task-30] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:56:01.291 DEBUG 4308 --- [http-nio-8090-exec-8] foListByCategoryNameAndIsPublished_COUNT : ==>  Preparing: SELECT count(0) FROM category AS c LEFT JOIN blog AS b ON b.category_id = c.id WHERE c.category_name = ? AND b.is_published = true
+2023-04-13 20:56:01.291 DEBUG 4308 --- [http-nio-8090-exec-8] foListByCategoryNameAndIsPublished_COUNT : ==> Parameters: test(String)
+2023-04-13 20:56:01.293 DEBUG 4308 --- [http-nio-8090-exec-8] foListByCategoryNameAndIsPublished_COUNT : <==      Total: 1
+2023-04-13 20:56:01.293 DEBUG 4308 --- [http-nio-8090-exec-8] BlogInfoListByCategoryNameAndIsPublished : ==>  Preparing: SELECT b.id, b.title, b.description, b.is_top, b.create_time, b.views, b.password, c.category_name FROM category AS c LEFT JOIN blog AS b ON b.category_id = c.id WHERE c.category_name = ? AND b.is_published = true order by is_top desc, create_time desc LIMIT ?
+2023-04-13 20:56:01.294 DEBUG 4308 --- [http-nio-8090-exec-8] BlogInfoListByCategoryNameAndIsPublished : ==> Parameters: test(String), 5(Integer)
+2023-04-13 20:56:01.295 DEBUG 4308 --- [http-nio-8090-exec-8] BlogInfoListByCategoryNameAndIsPublished : <==      Total: 1
+2023-04-13 20:56:01.295 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.TagMapper.getTagListByBlogId  : ==>  Preparing: select t.id, t.tag_name, t.color from blog_tag as bt left join tag as t on bt.tag_id = t.id where bt.blog_id = ?
+2023-04-13 20:56:01.295 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.TagMapper.getTagListByBlogId  : ==> Parameters: 1(Long)
+2023-04-13 20:56:01.296 DEBUG 4308 --- [http-nio-8090-exec-8] c.r.mapper.TagMapper.getTagListByBlogId  : <==      Total: 2
+2023-04-13 20:56:01.302 DEBUG 4308 --- [task-31] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:56:01.303 DEBUG 4308 --- [task-31] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /category(String), GET(String), {"categoryName":"test","pageNum":1}(String), 查看分类(String), test(String), 分类名称：test，第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 9(Integer), 2023-04-13 20:56:01.3(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:56:01.304 DEBUG 4308 --- [task-31] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:56:02.866 DEBUG 4308 --- [http-nio-8090-exec-10] foListByCategoryNameAndIsPublished_COUNT : ==>  Preparing: SELECT count(0) FROM category AS c LEFT JOIN blog AS b ON b.category_id = c.id WHERE c.category_name = ? AND b.is_published = true
+2023-04-13 20:56:02.866 DEBUG 4308 --- [http-nio-8090-exec-10] foListByCategoryNameAndIsPublished_COUNT : ==> Parameters: default(String)
+2023-04-13 20:56:02.868 DEBUG 4308 --- [http-nio-8090-exec-10] foListByCategoryNameAndIsPublished_COUNT : <==      Total: 1
+2023-04-13 20:56:02.868 DEBUG 4308 --- [http-nio-8090-exec-10] BlogInfoListByCategoryNameAndIsPublished : ==>  Preparing: SELECT b.id, b.title, b.description, b.is_top, b.create_time, b.views, b.password, c.category_name FROM category AS c LEFT JOIN blog AS b ON b.category_id = c.id WHERE c.category_name = ? AND b.is_published = true order by is_top desc, create_time desc LIMIT ?
+2023-04-13 20:56:02.868 DEBUG 4308 --- [http-nio-8090-exec-10] BlogInfoListByCategoryNameAndIsPublished : ==> Parameters: default(String), 5(Integer)
+2023-04-13 20:56:02.870 DEBUG 4308 --- [http-nio-8090-exec-10] BlogInfoListByCategoryNameAndIsPublished : <==      Total: 1
+2023-04-13 20:56:02.870 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.mapper.TagMapper.getTagListByBlogId  : ==>  Preparing: select t.id, t.tag_name, t.color from blog_tag as bt left join tag as t on bt.tag_id = t.id where bt.blog_id = ?
+2023-04-13 20:56:02.870 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.mapper.TagMapper.getTagListByBlogId  : ==> Parameters: 2(Long)
+2023-04-13 20:56:02.871 DEBUG 4308 --- [http-nio-8090-exec-10] c.r.mapper.TagMapper.getTagListByBlogId  : <==      Total: 2
+2023-04-13 20:56:02.876 DEBUG 4308 --- [task-32] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:56:02.876 DEBUG 4308 --- [task-32] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /category(String), GET(String), {"categoryName":"default","pageNum":1}(String), 查看分类(String), default(String), 分类名称：default，第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 9(Integer), 2023-04-13 20:56:02.874(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:56:02.878 DEBUG 4308 --- [task-32] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 20:56:03.338 DEBUG 4308 --- [task-25] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 20:56:03.338 DEBUG 4308 --- [task-25] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /blogs(String), GET(String), {"pageNum":1}(String), 访问页面(String), 首页(String), 第1页(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 8(Integer), 2023-04-13 20:56:03.336(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 20:56:03.340 DEBUG 4308 --- [task-25] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 21:00:55.342 DEBUG 4308 --- [http-nio-8090-exec-4] B.getSearchBlogListByQueryAndIsPublished : ==>  Preparing: select id, title, content from blog where is_published=true and password='' and content like ?
+2023-04-13 21:00:55.342 DEBUG 4308 --- [http-nio-8090-exec-4] B.getSearchBlogListByQueryAndIsPublished : ==> Parameters: %动态%(String)
+2023-04-13 21:00:55.346 DEBUG 4308 --- [http-nio-8090-exec-4] B.getSearchBlogListByQueryAndIsPublished : <==      Total: 1
+2023-04-13 21:00:55.350 DEBUG 4308 --- [task-33] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 21:00:55.350 DEBUG 4308 --- [task-33] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /searchBlog(String), GET(String), {"query":"动态"}(String), 搜索博客(String), 动态(String), 搜索内容：动态(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 8(Integer), 2023-04-13 21:00:55.348(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 21:00:55.352 DEBUG 4308 --- [task-33] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 21:07:17.480 DEBUG 4308 --- [task-34] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 21:07:17.481 DEBUG 4308 --- [task-34] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /about(String), GET(String), {}(String), 访问页面(String), 关于我(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 3(Integer), 2023-04-13 21:07:17.477(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 21:07:17.483 DEBUG 4308 --- [task-34] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 21:07:17.516 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.A.getAboutCommentEnabled           : ==>  Preparing: select value from about where name_en = "commentEnabled"
+2023-04-13 21:07:17.517 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.A.getAboutCommentEnabled           : ==> Parameters: 
+2023-04-13 21:07:17.518 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.A.getAboutCommentEnabled           : <==      Total: 1
+2023-04-13 21:07:17.519 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 21:07:17.519 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 1(Integer)
+2023-04-13 21:07:17.520 DEBUG 4308 --- [http-nio-8090-exec-7] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 21:07:17.521 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 21:07:17.521 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 1(Integer), -1(Long)
+2023-04-13 21:07:17.523 DEBUG 4308 --- [http-nio-8090-exec-7] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 21:07:17.523 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc LIMIT ?
+2023-04-13 21:07:17.523 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), -1(Long), 5(Integer)
+2023-04-13 21:07:17.524 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : <==      Total: 1
+2023-04-13 21:07:17.525 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc
+2023-04-13 21:07:17.525 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), 12(Long)
+2023-04-13 21:07:17.526 DEBUG 4308 --- [http-nio-8090-exec-7] tPageCommentListByPageAndParentCommentId : <==      Total: 0
+2023-04-13 21:07:30.940 DEBUG 4308 --- [http-nio-8090-exec-10] com.rawchen.mapper.AboutMapper.getList   : ==>  Preparing: select * from about
+2023-04-13 21:07:30.940 DEBUG 4308 --- [http-nio-8090-exec-10] com.rawchen.mapper.AboutMapper.getList   : ==> Parameters: 
+2023-04-13 21:07:30.941 DEBUG 4308 --- [http-nio-8090-exec-10] com.rawchen.mapper.AboutMapper.getList   : <==      Total: 4
+2023-04-13 21:08:35.494 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : ==>  Preparing: update about set value=? where name_en = ?
+2023-04-13 21:08:35.494 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : ==> Parameters: WTFOUR(String), title(String)
+2023-04-13 21:08:35.496 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : <==    Updates: 1
+2023-04-13 21:08:35.496 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : ==>  Preparing: update about set value=? where name_en = ?
+2023-04-13 21:08:35.496 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : ==> Parameters: 1329665666(String), musicId(String)
+2023-04-13 21:08:35.498 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : <==    Updates: 1
+2023-04-13 21:08:35.498 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : ==>  Preparing: update about set value=? where name_en = ?
+2023-04-13 21:08:35.498 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : ==> Parameters: To be done
+
+* 学校
+* 专业
+* 经历
+* 自我介绍
+
+(String), content(String)
+2023-04-13 21:08:35.507 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : <==    Updates: 1
+2023-04-13 21:08:35.507 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : ==>  Preparing: update about set value=? where name_en = ?
+2023-04-13 21:08:35.507 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : ==> Parameters: true(String), commentEnabled(String)
+2023-04-13 21:08:35.509 DEBUG 4308 --- [http-nio-8090-exec-5] c.r.mapper.AboutMapper.updateAbout       : <==    Updates: 1
+2023-04-13 21:08:35.513 DEBUG 4308 --- [task-35] c.r.m.O.saveOperationLog                 : ==>  Preparing: insert into operation_log (username, uri, method, param, description, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 21:08:35.514 DEBUG 4308 --- [task-35] c.r.m.O.saveOperationLog                 : ==> Parameters: admin(String), /admin/about(String), PUT(String), {"map":{"title":"WTFOUR","musicId":"1329665666","content":"To be done\n\n* 学校\n* 专业\n* 经历\n* 自我介绍\n\n","commentEnabled":"true"}}(String), 修改关于我页面(String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 19(Integer), 2023-04-13 21:08:35.512(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 21:08:35.516 DEBUG 4308 --- [task-35] c.r.m.O.saveOperationLog                 : <==    Updates: 1
+2023-04-13 21:08:38.759 DEBUG 4308 --- [http-nio-8090-exec-4] com.rawchen.mapper.AboutMapper.getList   : ==>  Preparing: select * from about
+2023-04-13 21:08:38.759 DEBUG 4308 --- [http-nio-8090-exec-4] com.rawchen.mapper.AboutMapper.getList   : ==> Parameters: 
+2023-04-13 21:08:38.760 DEBUG 4308 --- [http-nio-8090-exec-4] com.rawchen.mapper.AboutMapper.getList   : <==      Total: 4
+2023-04-13 21:08:38.760 DEBUG 4308 --- [http-nio-8090-exec-3] stByLimitNumAndIsPublishedAndIsRecommend : ==>  Preparing: select id, title, password, create_time, first_picture from blog where is_published = true and is_recommend = true order by rand() limit ?
+2023-04-13 21:08:38.761 DEBUG 4308 --- [http-nio-8090-exec-3] stByLimitNumAndIsPublishedAndIsRecommend : ==> Parameters: 5(Integer)
+2023-04-13 21:08:38.762 DEBUG 4308 --- [http-nio-8090-exec-3] stByLimitNumAndIsPublishedAndIsRecommend : <==      Total: 2
+2023-04-13 21:08:38.767 DEBUG 4308 --- [task-36] c.r.mapper.VisitLogMapper.saveVisitLog   : ==>  Preparing: insert into visit_log (uuid, uri, method, param, behavior, content, remark, ip, ip_source, os, browser, times, create_time, user_agent) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-13 21:08:38.767 DEBUG 4308 --- [task-36] c.r.mapper.VisitLogMapper.saveVisitLog   : ==> Parameters: f21873bb-45b2-35ae-9f0a-ff1ab9e89d18(String), /about(String), GET(String), {}(String), 访问页面(String), 关于我(String), (String), 2.0.0.1(String), 法国|Loire-Atlantique|橘子电信(String), Windows 10(String), Edge 112.0.0.0(String), 6(Integer), 2023-04-13 21:08:38.765(Timestamp), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39(String)
+2023-04-13 21:08:38.768 DEBUG 4308 --- [task-36] c.r.mapper.VisitLogMapper.saveVisitLog   : <==    Updates: 1
+2023-04-13 21:08:38.906 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.A.getAboutCommentEnabled           : ==>  Preparing: select value from about where name_en = "commentEnabled"
+2023-04-13 21:08:38.906 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.A.getAboutCommentEnabled           : ==> Parameters: 
+2023-04-13 21:08:38.908 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.A.getAboutCommentEnabled           : <==      Total: 1
+2023-04-13 21:08:38.909 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.C.countByPageAndIsPublished        : ==>  Preparing: select count(*) from comment where page=?
+2023-04-13 21:08:38.909 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.C.countByPageAndIsPublished        : ==> Parameters: 1(Integer)
+2023-04-13 21:08:38.910 DEBUG 4308 --- [http-nio-8090-exec-6] c.r.m.C.countByPageAndIsPublished        : <==      Total: 1
+2023-04-13 21:08:38.911 DEBUG 4308 --- [http-nio-8090-exec-6] ommentListByPageAndParentCommentId_COUNT : ==>  Preparing: SELECT count(0) FROM comment AS c1 LEFT JOIN comment AS c2 ON c1.parent_comment_id = c2.id WHERE c1.page = ? AND c1.parent_comment_id = ? AND c1.is_published = true
+2023-04-13 21:08:38.911 DEBUG 4308 --- [http-nio-8090-exec-6] ommentListByPageAndParentCommentId_COUNT : ==> Parameters: 1(Integer), -1(Long)
+2023-04-13 21:08:38.912 DEBUG 4308 --- [http-nio-8090-exec-6] ommentListByPageAndParentCommentId_COUNT : <==      Total: 1
+2023-04-13 21:08:38.912 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc LIMIT ?
+2023-04-13 21:08:38.913 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), -1(Long), 5(Integer)
+2023-04-13 21:08:38.914 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : <==      Total: 1
+2023-04-13 21:08:38.914 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : ==>  Preparing: select c1.id, c1.nickname, c1.content, c1.avatar, c1.create_time, c1.is_admin_comment, c1.website, c1.parent_comment_id as parent_comment_id, c2.nickname as parent_comment_nickname from comment as c1 left join comment as c2 on c1.parent_comment_id=c2.id where c1.page=? and c1.parent_comment_id=? and c1.is_published=true order by c1.create_time desc
+2023-04-13 21:08:38.914 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : ==> Parameters: 1(Integer), 12(Long)
+2023-04-13 21:08:38.915 DEBUG 4308 --- [http-nio-8090-exec-6] tPageCommentListByPageAndParentCommentId : <==      Total: 0
+2023-04-13 21:10:45.383  INFO 4308 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-04-13 21:10:45.396  INFO 4308 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-13 21:10:45.399  INFO 4308 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2023-04-13 21:10:45.399  INFO 4308 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-04-13 21:10:45.399  INFO 4308 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-04-13 21:10:45.399  INFO 4308 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-04-13 21:10:45.525  INFO 4308 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-13 21:10:45.529  INFO 4308 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
