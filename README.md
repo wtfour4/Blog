@@ -31,7 +31,7 @@
 3. 嵌入[chatbot机器人](https://github.com/wtfour4/chat-bot)
    - 部署至“拓展台”
 
-4. 嵌入agentGpt
+4. 嵌入[agentGpt网页](https://github.com/wtfour4/AgentGPT)
    - 部署至“拓展台”
 
 
