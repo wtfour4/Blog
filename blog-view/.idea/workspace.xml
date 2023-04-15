@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c26aeef-a184-45c0-8e3a-c77519a5fc1e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../blog-api/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-api/src/main/resources/application-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../blog-api/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-api/target/classes/application-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../blog.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,7 @@
       <workItem from="1681037283407" duration="1544000" />
       <workItem from="1681092879024" duration="459000" />
       <workItem from="1681388985081" duration="1335000" />
+      <workItem from="1681537729359" duration="2013000" />
     </task>
     <servers />
   </component>

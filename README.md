@@ -17,6 +17,43 @@
 
 希望以后有机会加入友链~
 
+## 工程架构
+
+以下服务皆部署至Docker上，1台设备对应一个container
+
+- Mysql
+
+  - 采用主从、主备
+  - 主、从机各设一台备用机
+  - 共4台
+
+- Redis
+
+  - 集群
+  - 2台即可
+
+- 后台
+
+  - 拆分为三个服务
+    - blog-api：实体定义，数据库访问
+      - 2台
+    - blog-cms：cms后台
+      - 2台
+    - blog-view：view后台
+      - 2台
+
+  - blog-cms和blog-view通过rpc调用blog-api提供的方法
+    - 服务注册、服务发现的框架？
+    - SpringCloud？Dubbo？
+  - blog-cms和blog-view通过nginx方向代理实现负载均衡
+
+- 前台
+
+  - cms
+    - 1台
+  - view
+    - 1台
+
 ## TODO
 
 1. Website重设计
